@@ -1,11 +1,17 @@
 /*
- Humidity sensor to Arduino connections:
+This sketch has the Arduino working as a humidity, air temp, water temp sensor, as well as an HTML server. In application, this is a heavy load for the Arduino. Hosted HTML pages (in this case, index.html) are stored in the SD card slot on the Arduino WIFI shield.
+
+Connections: 
+
+ Humidity(and air temp.) sensor to Arduino connections:
+[Pins in sensor : Arduino pin holes]
  1:     5V
  2:     D2 (Digital 2)
  3:     Not connected
  4:     GND
  
  Water temp. sensor to Arduino connections:
+ [Water temp cables : Arduino pin holes]
  Black:    A0 (Analog 0)
  Red:      GND
  White:    D0 (Digital 0) 
@@ -24,7 +30,7 @@
 
 dht DHT; // Humidity sensor
 float temp; // Water temperature sensor
-char ssid[] = "UCInet Mobile Access";      // your network SSID (name) 
+char ssid[] = "linksys";      // your network SSID (name) 
 char pass[] = "";   // your network password
 int keyIndex = 0;                 // your network key Index number (needed only for WEP)
 
