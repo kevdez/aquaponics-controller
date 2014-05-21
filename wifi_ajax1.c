@@ -1,4 +1,7 @@
-/*
+/* (Editing comments and code WIP)
+
+Refer to wifi_ajax0 to see a more complete set of comments.
+
  Humidity sensor to Arduino connections:
  1:     5V
  2:     D2 (Digital 2)
